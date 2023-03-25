@@ -1,0 +1,16 @@
+version: '3'
+services:
+  train:
+    image: veerabhadra1234/phonepaytrain:v1
+    ports:
+      - "8000:80"
+
+  movies:
+    image: veerabhadra1234/phonepaymovies:v1
+    ports:
+      - "8001:80"
+
+  recharge:
+    image: veerabhadra1234/phonepayrecharge:v1
+    ports:
+      - "8002:80"
